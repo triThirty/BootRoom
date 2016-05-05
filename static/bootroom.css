@@ -1,0 +1,63 @@
+body{
+    padding: 0;
+    margin: 0;
+    font-family: "Helvetica Neue", "Luxi Sans", "DejaVu Sans", Tahoma, "Hiragino Sans GB", "Microsoft Yahei", sans-serif;
+}
+
+.nav-toggle {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 70px;
+  height: 55px;
+  float: right;
+  text-indent: -9999px;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0) url("hamburger.gif") no-repeat 50% 33%;
+}
+
+@media screen and (min-width: 40em) {
+  .nav-collapse li {
+    width: 25%;
+    *width: 24.9%; /* IE7 Hack */
+    _width: 19%; /* IE6 Hack */
+  }
+}
+
+.nav-collapse a {
+  color: #fff;
+  text-decoration: none;
+  width: 100%;
+  background: #f4421a;
+  border-bottom: 1px solid white;
+  padding: 0.7em 1em;
+  float: left;
+}
+
+.nav-collapse,
+.nav-collapse ul {
+  list-style: none;
+  width: 100%;
+  float: left;
+}
+
+
+@media screen and (-webkit-min-device-pixel-ratio: 1.3), not all, not all, not all, screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx){
+        .nav-toggle {
+        background-image: url("lfc_crest.png");
+        -moz-background-size: 100px 100px;
+        -o-background-size: 100px 100px;
+        background-size: contain;
+    }
+}
+
+
+main{
+    box-sizing: border-box;
+    margin: 65px 0 50px 25%;
+    padding: 50px 70px;
+    max-width: 800px;
+    display: block;
+}
